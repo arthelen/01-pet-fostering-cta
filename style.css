@@ -1,0 +1,270 @@
+/* General styles for the page */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif; /* Apply inviting and modern font to the entire page */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the Call-to-Action banner */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image */
+  position: relative; /* Position for overlay */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align text */
+  padding: 80px 20px; /* Increase padding for a taller banner */
+  font-family: 'Trebuchet MS', Arial, sans-serif; /* Inviting and modern font */
+}
+
+.cta-banner::before {
+  content: ''; /* Empty content for the overlay */
+  position: absolute; /* Position overlay over the banner */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire banner */
+  height: 100%; /* Cover the entire banner */
+  background-color: rgba(0, 123, 138, 0.8); /* Darken the teal overlay for better contrast */
+  z-index: 1; /* Place below text */
+}
+
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+  position: relative; /* Ensure text and button are above the overlay */
+  z-index: 2;
+}
+
+.cta-banner h1 {
+  font-size: 2.8em; /* Slightly larger and more inviting */
+  font-weight: bold; /* Make the heading stand out */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.cta-banner p {
+  font-size: 1.3em; /* Slightly larger font for readability */
+  font-style: italic; /* Add a friendly, inviting tone */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+.cta-button {
+  display: inline-block; /* Make the button inline but block-like */
+  background-color: #00A3B4; /* Bright teal for eye-catching effect */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 15px 30px; /* Add padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  font-size: 1em; /* Standard font size */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.cta-button:hover {
+  background-color: #005F66; /* Darker teal for hover effect */
+}
+
+/* Styles for the site header */
+.site-header {
+  background-color: #005F66; /* Dark teal for the header background */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Add spacing for the header */
+}
+
+.site-header h1 {
+  font-size: 1.8em; /* Slightly larger font for the site name */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for the information section */
+.info-section {
+  display: table; /* Use table layout for simple two-column design */
+  width: 80%; /* Reduce width for better centering */
+  margin: 40px auto; /* Add more spacing above and below the section */
+  text-align: center; /* Center-align content horizontally */
+}
+
+.info-section img {
+  display: table-cell; /* Align image in one column */
+  width: 50%; /* Half the width of the section */
+  vertical-align: middle; /* Center vertically */
+  padding-right: 10px; /* Add spacing between image and text */
+}
+
+.info-section div {
+  display: table-cell; /* Align text in the other column */
+  width: 50%; /* Half the width of the section */
+  vertical-align: middle; /* Center text vertically */
+  padding-left: 10px; /* Add spacing between text and image */
+}
+
+.info-section h2 {
+  font-size: 1.8em; /* Slightly larger heading */
+  margin-bottom: 10px; /* Space below the heading */
+  color: #005F66;
+}
+
+.info-section p {
+  font-size: 1.2em; /* Readable font size */
+  line-height: 1.5; /* Add line spacing for readability */
+}
+
+/* Styles for the adoption section */
+.adoption-section {
+  text-align: center; /* Center-align the section */
+  padding: 40px 20px; /* Add spacing around the section */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.adoption-section h2 {
+  font-size: 2em; /* Larger heading for the section */
+  color: #005F66; /* Match the teal theme */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.pet-card {
+  display: inline-block; /* Display cards inline */
+  width: 200px; /* Fixed width for cards */
+  margin: 10px; /* Space between cards */
+  padding: 15px; /* Add padding inside the card */
+  background-color: white; /* White background for cards */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  text-align: center; /* Center-align text inside cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.pet-card img {
+  width: 100%; /* Make the image fit the card width */
+  border-radius: 5px; /* Match the card's rounded corners */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.pet-card h3 {
+  font-size: 1.5em; /* Larger font for pet names */
+  color: #007B8A; /* Teal color for names */
+  margin-bottom: 5px; /* Space below the name */
+}
+
+.pet-card p {
+  font-size: 1em; /* Standard font size for details */
+  color: #333; /* Dark gray for readability */
+  margin: 5px 0; /* Space between details */
+}
+
+.pet-card:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 4px 15px rgba(0, 123, 138, 0.5); /* Add a teal shadow on hover */
+}
+
+.adopt-button {
+  display: inline-block; /* Make the button inline but block-like */
+  background-color: #00A3B4; /* Bright teal for the button */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  font-size: 1em; /* Standard font size */
+  margin-top: 10px; /* Space above the button */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.adopt-button:hover {
+  background-color: #005F66; /* Darker teal for hover effect */
+}
+
+/* Styles for the adoption process section */
+.adoption-process {
+  text-align: center; /* Center-align the section */
+  padding: 40px 20px; /* Add spacing around the section */
+  background-color: #005F66; /* Dark teal background for contrast */
+  color: white; /* White text for readability */
+}
+
+.adoption-process h2 {
+  font-size: 2em; /* Larger heading for the section */
+  color: #00A3B4; /* Bright teal for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.process-step {
+  display: inline-block; /* Display steps inline */
+  width: 250px; /* Fixed width for each step */
+  margin: 10px; /* Space between steps */
+  text-align: center; /* Center-align text inside steps */
+}
+
+.process-step img {
+  width: 100%; /* Make the image fit the step width */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.process-step p {
+  font-size: 1em; /* Standard font size for text */
+  color: white; /* Ensure text is readable on dark background */
+  margin: 0; /* Remove default margin */
+}
+
+.process-step h3 {
+  font-size: 1.2em; /* Slightly larger font for subheadings */
+  color: #00A3B4; /* Bright teal for subheadings */
+  margin-bottom: 10px; /* Space below the subheading */
+}
+
+.process-step h4 {
+  font-size: 1.1em; /* Slightly smaller than the step number */
+  color: #FFFFFF; /* White text for readability on dark background */
+  margin-bottom: 10px; /* Space below the subheading */
+  font-style: italic; /* Add a subtle style to differentiate */
+}
+
+/* Styles for the site footer */
+.site-footer {
+  background-color: #007B8A; /* Match the teal color used in the banner */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Reduce padding for a shorter footer */
+  font-size: 1em; /* Standard font size */
+  border-top: 5px solid #005F66; /* Add a top border to visually separate the footer */
+}
+
+.site-footer a {
+  color: #00A3B4; /* Bright teal for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links stand out */
+}
+
+.site-footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Georgia', serif; /* Use a serif font for headers */
+  font-weight: bold; /* Make headers bold */
+}
+
+.more-pets {
+  text-align: center; /* Center-align the prompt */
+  margin-top: 20px; /* Add spacing above the prompt */
+}
+
+.more-pets p {
+  font-size: 1.2em; /* Slightly larger font for the prompt text */
+  color: #005F66; /* Match the teal theme */
+  margin-bottom: 10px; /* Space below the text */
+}
+
+.see-more-button {
+  display: inline-block; /* Make the button inline but block-like */
+  background-color: #00A3B4; /* Bright teal for the button */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  font-size: 1em; /* Standard font size */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.see-more-button:hover {
+  background-color: #005F66; /* Darker teal for hover effect */
+}
