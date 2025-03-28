@@ -24,7 +24,7 @@ body {
   left: 0;
   width: 100%; /* Cover the entire banner */
   height: 100%; /* Cover the entire banner */
-  background-color: rgba(0, 123, 138, 0.8); /* Darken the teal overlay for better contrast */
+  background-color: rgba(0, 123, 138, 0.7); /* Darken the teal overlay for better contrast */
   z-index: 1; /* Place below text */
 }
 
@@ -39,6 +39,7 @@ body {
   font-size: 2.8em; /* Slightly larger and more inviting */
   font-weight: bold; /* Make the heading stand out */
   margin-bottom: 20px; /* Space below the heading */
+  color: #F8BFA2; /* Brighter teal for consistency */
 }
 
 .cta-banner p {
@@ -64,7 +65,7 @@ body {
 
 /* Styles for the site header */
 .site-header {
-  background-color: #005F66; /* Dark teal for the header background */
+  background-color: #00454D; /* Dark teal for the header background */
   color: white; /* White text for contrast */
   text-align: center; /* Center-align text */
   padding: 10px 0; /* Add spacing for the header */
@@ -85,33 +86,37 @@ body {
 
 .info-section img {
   display: table-cell; /* Align image in one column */
-  width: 50%; /* Half the width of the section */
+  width: 40%; /* Reduce the width of the image */
   vertical-align: middle; /* Center vertically */
-  padding-right: 10px; /* Add spacing between image and text */
+  padding-right: 5px; /* Reduce spacing between image and text */
+  margin-left: 450px; /* Add left margin to the image */
+  border-radius: 45px; /* Rounded corners for a modern look */
 }
 
 .info-section div {
   display: table-cell; /* Align text in the other column */
   width: 50%; /* Half the width of the section */
   vertical-align: middle; /* Center text vertically */
-  padding-left: 10px; /* Add spacing between text and image */
+  padding-left: 5px; /* Reduce spacing between text and image */
+  padding-right: 450px; /* Add right margin to the text */
 }
 
 .info-section h2 {
-  font-size: 1.8em; /* Slightly larger heading */
-  margin-bottom: 10px; /* Space below the heading */
+  font-size: 1.8em; /* Increase heading size */
+  margin-bottom: 5px; /* Keep reduced space below the heading */
   color: #005F66;
 }
 
 .info-section p {
-  font-size: 1.2em; /* Readable font size */
-  line-height: 1.5; /* Add line spacing for readability */
+  font-size: 1.2em; /* Increase paragraph font size */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  margin-top: 5px; /* Keep slight spacing above the paragraph */
 }
 
 /* Styles for the adoption section */
 .adoption-section {
   text-align: center; /* Center-align the section */
-  padding: 40px 20px; /* Add spacing around the section */
+  padding: 40px 20px 60px; /* Add more padding to the bottom */
   background-color: #f9f9f9; /* Light background for contrast */
 }
 
@@ -125,7 +130,7 @@ body {
   display: inline-block; /* Display cards inline */
   width: 200px; /* Fixed width for cards */
   margin: 10px; /* Space between cards */
-  padding: 15px; /* Add padding inside the card */
+  padding: 25px; /* Increased padding inside the card */
   background-color: white; /* White background for cards */
   border: 1px solid #ddd; /* Light border for separation */
   border-radius: 5px; /* Rounded corners for a modern look */
@@ -175,14 +180,14 @@ body {
 /* Styles for the adoption process section */
 .adoption-process {
   text-align: center; /* Center-align the section */
-  padding: 40px 20px; /* Add spacing around the section */
-  background-color: #005F66; /* Dark teal background for contrast */
-  color: white; /* White text for readability */
+  padding: 40px 20px 60px; /* Add more padding to the bottom */
+  background-color: #00454D; /* Darker teal background for better contrast */
+  color: #E0F7FA; /* Lighter text color for readability */
 }
 
 .adoption-process h2 {
   font-size: 2em; /* Larger heading for the section */
-  color: #00A3B4; /* Bright teal for the heading */
+  color: #00D1E0; /* Brighter teal for the heading */
   margin-bottom: 20px; /* Space below the heading */
 }
 
@@ -201,13 +206,13 @@ body {
 
 .process-step p {
   font-size: 1em; /* Standard font size for text */
-  color: white; /* Ensure text is readable on dark background */
+  color: #E0F7FA; /* Ensure text is readable on dark background */
   margin: 0; /* Remove default margin */
 }
 
 .process-step h3 {
   font-size: 1.2em; /* Slightly larger font for subheadings */
-  color: #00A3B4; /* Bright teal for subheadings */
+  color: #F8BFA2; /* Match the CTA banner heading color */
   margin-bottom: 10px; /* Space below the subheading */
 }
 
@@ -229,7 +234,7 @@ body {
 }
 
 .site-footer a {
-  color: #00A3B4; /* Bright teal for links */
+  color: #F8BFA2; /* Darker teal for links */
   text-decoration: none; /* Remove underline from links */
   font-weight: bold; /* Make links stand out */
 }
@@ -267,4 +272,344 @@ h1, h2, h3, h4 {
 
 .see-more-button:hover {
   background-color: #005F66; /* Darker teal for hover effect */
+}
+
+/* Styles for the locations section */
+.locations-section {
+  text-align: center; /* Center-align the section */
+  padding: 40px 20px; /* Add spacing around the section */
+  background-color: #00454D; /* Darker teal background for better contrast */
+  color: #E0F7FA; /* Lighter text color for readability */
+}
+
+.locations-section h2 {
+  font-size: 2em; /* Larger heading for the section */
+  color: #00D1E0; /* Brighter teal for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.locations-section ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.locations-section li {
+  font-size: 1.2em; /* Slightly larger font for readability */
+  margin: 10px 0; /* Space between list items */
+  color: #E0F7FA; /* Ensure text is readable on dark background */
+}
+
+.locations-section li strong {
+  color: #F8BFA2; /* Match the footer link color */
+}
+
+.styled-hr {
+  border: none; /* Remove default border */
+  height: 4px; /* Set the height of the line */
+  background-color: #F8BFA2; /* Set the color */
+  border-radius: 2px; /* Add rounded edges */
+  width: 50%; /* Reduce the width */
+  margin: 10px auto; /* Center the line and add spacing above and below */
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    display: block; /* Stack content vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .info-section img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto 20px; /* Center the image and add spacing below */
+    width: 60%; /* Adjust image size for smaller screens */
+  }
+
+  .info-section div {
+    display: block; /* Make the text a block element */
+    margin: 0 auto; /* Center the text */
+    padding: 0; /* Remove side padding */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* General adjustments for smaller screens */
+  body {
+    font-size: 14px; /* Reduce base font size */
+  }
+
+  .cta-banner {
+    padding: 40px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .cta-banner h1 {
+    font-size: 2em; /* Adjust heading size */
+  }
+
+  .cta-banner p {
+    font-size: 1em; /* Adjust paragraph size */
+  }
+
+  .info-section {
+    display: block; /* Stack content vertically */
+    text-align: center; /* Center-align content */
+    margin: 20px auto; /* Adjust spacing */
+  }
+
+  .info-section img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto 20px; /* Center the image and add spacing below */
+    width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .info-section div {
+    display: block; /* Make the text a block element */
+    margin: 0 auto; /* Center the text */
+    padding: 0; /* Remove side padding */
+  }
+
+  .adoption-process {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .process-step {
+    display: block; /* Stack steps vertically */
+    margin: 20px auto; /* Add spacing between steps */
+    width: 90%; /* Adjust width */
+  }
+
+  .process-step img {
+    width: 100%; /* Ensure images fit within the container */
+  }
+
+  .adoption-section {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .pet-card {
+    display: block; /* Stack cards vertically */
+    margin: 20px auto; /* Add spacing between cards */
+    width: 90%; /* Adjust width */
+  }
+
+  .locations-section {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .locations-section ul {
+    padding: 0; /* Remove padding */
+  }
+
+  .locations-section li {
+    font-size: 1em; /* Adjust font size */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Adjustments for medium screens (tablets and small laptops) */
+  .info-section img {
+    width: 50%; /* Adjust image size */
+  }
+
+  .info-section div {
+    width: 50%; /* Adjust text width */
+  }
+
+  .process-step {
+    width: 45%; /* Adjust step width */
+    margin: 20px 2.5%; /* Add spacing between steps */
+  }
+
+  .pet-card {
+    width: 45%; /* Adjust card width */
+    margin: 20px 2.5%; /* Add spacing between cards */
+  }
+}
+
+@media (min-width: 1201px) {
+  /* Adjustments for large screens */
+  .cta-banner h1 {
+    font-size: 1.75em; /* Reduce heading size */
+  }
+
+  .cta-banner p {
+    font-size: 0.9em; /* Reduce paragraph size */
+  }
+
+  .info-section img {
+    width: 28%; /* Reduce image size */
+  }
+
+  .info-section div {
+    width: 35%; /* Reduce text width */
+  }
+
+  .process-step {
+    width: 24%; /* Reduce step width by about 20% */
+    margin: 20px 1%; /* Adjust spacing between steps */
+  }
+
+  .pet-card {
+    width: 24%; /* Reduce card width by about 20% */
+    margin: 20px 1%; /* Adjust spacing between cards */
+  }
+
+  .locations-section h2 {
+    font-size: 1.4em; /* Reduce heading size */
+  }
+
+  .locations-section li {
+    font-size: 0.9em; /* Reduce font size */
+  }
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller base font size for mobile screens */
+  }
+
+  .cta-banner h1 {
+    font-size: 1.8em; /* Smaller heading size */
+  }
+
+  .cta-banner p {
+    font-size: 0.9em; /* Smaller paragraph size */
+  }
+
+  .info-section h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  .info-section p {
+    font-size: 1em; /* Adjust paragraph size */
+  }
+
+  .adoption-process h2 {
+    font-size: 1.6em; /* Adjust heading size */
+  }
+
+  .process-step h3 {
+    font-size: 1em; /* Adjust step heading size */
+  }
+
+  .process-step p {
+    font-size: 0.9em; /* Adjust paragraph size */
+  }
+
+  .pet-card h3 {
+    font-size: 1.2em; /* Adjust pet name size */
+  }
+
+  .pet-card p {
+    font-size: 0.9em; /* Adjust pet details size */
+  }
+
+  .locations-section h2 {
+    font-size: 1.6em; /* Adjust heading size */
+  }
+
+  .locations-section li {
+    font-size: 0.9em; /* Adjust list item size */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    font-size: 16px; /* Medium base font size for tablets and small laptops */
+  }
+
+  .cta-banner h1 {
+    font-size: 2.2em; /* Adjust heading size */
+  }
+
+  .cta-banner p {
+    font-size: 1.1em; /* Adjust paragraph size */
+  }
+
+  .info-section h2 {
+    font-size: 1.7em; /* Adjust heading size */
+  }
+
+  .info-section p {
+    font-size: 1.1em; /* Adjust paragraph size */
+  }
+
+  .adoption-process h2 {
+    font-size: 1.8em; /* Adjust heading size */
+  }
+
+  .process-step h3 {
+    font-size: 1.1em; /* Adjust step heading size */
+  }
+
+  .process-step p {
+    font-size: 1em; /* Adjust paragraph size */
+  }
+
+  .pet-card h3 {
+    font-size: 1.3em; /* Adjust pet name size */
+  }
+
+  .pet-card p {
+    font-size: 1em; /* Adjust pet details size */
+  }
+
+  .locations-section h2 {
+    font-size: 1.8em; /* Adjust heading size */
+  }
+
+  .locations-section li {
+    font-size: 1em; /* Adjust list item size */
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    font-size: 18px; /* Larger base font size for large screens */
+  }
+
+  .cta-banner h1 {
+    font-size: 2.5em; /* Adjust heading size */
+  }
+
+  .cta-banner p {
+    font-size: 1.2em; /* Adjust paragraph size */
+  }
+
+  .info-section h2 {
+    font-size: 1.8em; /* Adjust heading size */
+  }
+
+  .info-section p {
+    font-size: 1.2em; /* Adjust paragraph size */
+  }
+
+  .adoption-process h2 {
+    font-size: 2em; /* Adjust heading size */
+  }
+
+  .process-step h3 {
+    font-size: 1.2em; /* Adjust step heading size */
+  }
+
+  .process-step p {
+    font-size: 1.1em; /* Adjust paragraph size */
+  }
+
+  .pet-card h3 {
+    font-size: 1.5em; /* Adjust pet name size */
+  }
+
+  .pet-card p {
+    font-size: 1.1em; /* Adjust pet details size */
+  }
+
+  .locations-section h2 {
+    font-size: 2em; /* Adjust heading size */
+  }
+
+  .locations-section li {
+    font-size: 1.2em; /* Adjust list item size */
+  }
 }
